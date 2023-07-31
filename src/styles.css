@@ -1,5 +1,5 @@
 body {
-  background-color: #4a90e2;
+  background-color: #a7b5fe;
 }
 .container {
   max-width: 1400px;
@@ -8,13 +8,18 @@ body {
 
 .grid {
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
   grid-gap: 20px;
 }
-
+.grid-2-columns {
+  grid-template-columns: 1fr 1fr;
+}
+.grid-3-columns {
+  grid-template-columns: 1fr 1fr 1fr;
+}
 section {
   max-width: 1200px;
   margin: 0 auto;
+  padding: 100px 0;
 }
 
 header {
@@ -22,7 +27,7 @@ header {
       rgba(74, 144, 226, 0.2),
       rgba(74, 144, 226, 0.2)
     ),
-    url(../images/taylor-swift-2.jpeg);
+    url(../images/taylor-swift-header.jpeg);
   background-repeat: no-repeat;
   background-size: cover;
   color: #ffffff;
@@ -68,13 +73,50 @@ header a {
   background: #4a90e2;
 }
 
+main {
+  background-color: #ffffff;
+}
+
+main h2 {
+  font-family: "Playfair Display" sans-serif;
+  font-size: 48px;
+  font-weight: 700;
+  line-height: 1.5;
+  text-align: left;
+  margin: 0;
+}
+main h3 {
+  font-family: "Roboto", sans-serif;
+  font-size: 13px;
+  font-weight: 700;
+  line-height: 1.5;
+  margin: 0;
+  letter-spacing: 5px;
+  text-align: left;
+  text-transform: uppercase;
+  padding: 2px 6px;
+  background-color: #a7b5fe;
+  display: inline-block;
+}
+main p {
+  font-family: "Roboto", sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 1.5;
+  letter-spacing: 0px;
+  text-align: left;
+}
+.main-image {
+  max-width: 100%;
+}
+
 footer {
   color: #ffffff;
   background-image: linear-gradient(rgba(2, 4, 2, 0.8), rgba(2, 4, 3, 0.8)),
     url(/images/taylor-swift-footer.jpeg);
   background-repeat: no-repeat;
   background-size: cover;
-  padding: 100px 0;
+  padding: 75px 0;
 }
 
 footer h4 {
@@ -126,5 +168,13 @@ footer a {
     font-size: 12px;
     padding: 8px 16px;
     margin: 16px;
+  }
+
+  .grid {
+    grid-template-columns: 1fr;
+    grid-gap: 10px;
+  }
+  section {
+    padding: 30px;
   }
 }
