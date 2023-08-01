@@ -26,7 +26,9 @@ body {
   color: #000000;
   border-radius: 15px;
 }
-
+iframe {
+  width: 100%;
+}
 .card h4 {
   font-family: "Roboto", sans-serif;
   font-size: 27px;
