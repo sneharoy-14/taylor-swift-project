@@ -16,10 +16,87 @@ body {
 .grid-3-columns {
   grid-template-columns: 1fr 1fr 1fr;
 }
+
+.text-center {
+  text-align: center;
+}
+
+.card {
+  background-color: rgba(255, 255, 255, 0.75);
+  color: #000000;
+  border-radius: 15px;
+}
+
+.card h4 {
+  font-family: "Roboto", sans-serif;
+  font-size: 27px;
+  font-weight: 700;
+  line-height: 1.5;
+  text-align: left;
+  margin: 0;
+  padding: 5px 24px;
+}
+.card h5 {
+  font-family: "Roboto", sans-serif;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 1.5;
+  text-align: left;
+  margin: 0;
+  padding: 7px 24px;
+}
+.card p {
+  font-family: "Roboto", sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 1.5;
+  text-align: left;
+  margin: 0;
+  padding: 10px 24px;
+}
+
+.btn {
+  font-family: "Roboto", sans-serif;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 1.5;
+  text-align: center;
+  color: #ffffff;
+  padding: 16px 70px;
+  margin: 24px 32px;
+  border-radius: 100px;
+  display: block;
+  text-decoration: none;
+  background: #4a90e2;
+}
 section {
-  max-width: 1200px;
+  max-width: 100%;
   margin: 0 auto;
-  padding: 100px 0;
+  padding: 100px;
+}
+section.secondary {
+  background-image: linear-gradient(
+      rgba(74, 144, 226, 0.2),
+      rgba(74, 144, 226, 0.2)
+    ),
+    url(../images/taylor-swift-2.jpeg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  color: #ffffff;
+}
+.secondary h2 {
+  margin: 0 0 20px 0;
+}
+.secondary h3 {
+  font-family: "Roboto", sans-serif;
+  font-size: 13px;
+  font-weight: 700;
+  line-height: 1.5;
+  margin: 0;
+  letter-spacing: 5px;
+  text-align: center;
+  text-transform: uppercase;
+  padding: 2px 6px;
 }
 
 header {
@@ -85,7 +162,7 @@ main h2 {
   text-align: left;
   margin: 0;
 }
-main h3 {
+.primary h3 {
   font-family: "Roboto", sans-serif;
   font-size: 13px;
   font-weight: 700;
@@ -146,6 +223,18 @@ footer a {
   font-size: 16px;
   line-height: 1.5;
   color: #ffffff;
+}
+
+.songs {
+  font-family: "Roboto", sans-serif;
+  font-size: 13px;
+  font-weight: 700;
+  line-height: 1.5;
+  margin: 0;
+  letter-spacing: 5px;
+  text-align: center;
+  text-transform: uppercase;
+  padding: 2px 6px;
 }
 
 @media (max-width: 900px) {
