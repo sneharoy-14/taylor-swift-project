@@ -153,7 +153,7 @@ header a {
 }
 
 main {
-  background-color: #ffffff;
+  background-color: #ece9e1;
 }
 
 main h2 {
@@ -188,14 +188,28 @@ main p {
 .main-image {
   max-width: 100%;
 }
-
+.tertiary {
+  background-color: #ece9e1;
+}
+.tertiary h3 {
+  font-family: "Roboto", sans-serif;
+  font-size: 13px;
+  font-weight: 700;
+  line-height: 1.5;
+  margin: 0 auto;
+  letter-spacing: 5px;
+  text-transform: uppercase;
+  padding: 2px 6px;
+}
+.tertiary h2 {
+  margin: 0 0 20px 0;
+}
 footer {
   color: #ffffff;
   background-image: linear-gradient(rgba(2, 4, 2, 0.8), rgba(2, 4, 3, 0.8)),
     url(/images/taylor-swift-footer.jpeg);
   background-repeat: no-repeat;
   background-size: cover;
-  padding: 75px 0;
 }
 
 footer h4 {
